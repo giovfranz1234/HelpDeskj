@@ -12,13 +12,13 @@ import java.util.List;
 public class Tecnico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "tecnico_id")
+
     private Long id;
-    @Column(name = "nombre_Completo")
+
     private String nombre;
-    @Column(name = "especialidad")
+
     private String especialidad;
-    @Column(name = "disponibilidad")
+
     private String disponibilidad;
 
     @OneToMany(mappedBy = "asignadoA", cascade = CascadeType.ALL)

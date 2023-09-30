@@ -15,7 +15,7 @@ public class Documentos {
 
     @OneToOne
     @JoinColumn(name = "ticket_id")
-    private Ticket aplicadaEnTicket;
+    private Ticket GuardadoEnTicket;
 
     @OneToOne
     @JoinColumn(name = "equipo_id")
